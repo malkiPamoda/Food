@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GALLERY</title>
+	<link rel="stylesheet"  href="style.css">
+	<link rel="stylesheet"  href= "lightbox.css">
+	<style>
+		.container01{
+			
+			width: 100%;
+			height: 100vh;
+			position:bottom ;
+			background-image: url("table3.jpg");
+			background-size: 100% 100%;
+			border:5px solid;
+		}
+		.container{
+			width: 100%;
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			
+		}
+		.gallery{
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+			grid-gap: 30px;
+		}
+		.gallery img{
+			width: 100%;
+			filter: opacity(50%);
+			transition: 1s;
+			border: 2px solid;
+			border-color: black;
+			cursor:pointer ;
+		}
+		
+		.gallery img:hover{
+			filter: contrast(200%);
+			transform: scale(1.1);
+	}
+
+	table{ 
+			padding-left: 100PX;
+			border-collapse: separate;
+			border-spacing: 10px 20px;
+			
+		}
+	th{
+			font-weight: bold;
+			font-size: 30px;
+			text-align: center;
+			text-shadow: 4px 4px 8px white;
+		}
+		.a{
+			
+		}
+	</style>
+</head>
+<body>
+	<nav>
+		 <div class="logo">
+		 		No 29,Galle Road,Ambalangoda <br><br> Book Now :+94912233445
+		 </div>
+		 <ul>
+		 	<li><a href="Home.html">HOME</a></li>
+		 	<li><a href="navigation_bar_menu.html">MENU</a></li>
+		 	<li><a href="navigation_bar_reservation.html">RESERVATION</a></li>
+		 	<li><a href="navigation_bar_gallery.html">GALLERY</a></li>
+		 	<li><a href="navigation_bar_contact.html">CONTACT</a></li>
+		 </ul>
+
+
+	</nav>
+	<section></section>
+	<div class="container01">
+	 	
+	 	<center>
+	 	<u style="color: white;"><p style="font-size: 40px; font-weight: bold; color: white; text-align: center;  text-shadow: 8px 8px 16px black; padding-top: 100px; font-family: times new roman; ">IMAGE GALLERY</p></u>
+	 	<p style="font-size: 30px; font-weight: bold; color: white; text-align: center; text-shadow: 8px 8px 16px black; font-family: times new roman;" >Good food never fail in bringing people together....</p>
+	 	</center>
+	</div>
+
+	
+		<div class="container">
+			<div class="gallery">
+				<a href="images/1.jpeg" data-lightbox="Foods">
+					<img src="images/1.jpeg" >
+				</a>
+				<a href="images/2.jpeg" data-lightbox="Foods">
+					<img src="images/2.jpeg">
+				</a>
+				<a href="images/pizza.jpg" data-lightbox="Foods">
+					<img src="images/pizza.jpg">
+				</a>
+				<a href="images/20.jpeg" data-lightbox="Foods">
+					<img src="images/20.jpeg">
+				</a>
+				<a href="images/ff.jpeg" data-lightbox="Foods">
+					<img src="images/ff.jpeg">
+				</a>
+				<a href="images/4.jpeg" data-lightbox="Foods">
+					<img src="images/4.jpeg">
+				</a>
+				<a href="images/6.jpeg" data-lightbox="Foods">
+					<img src="images/6.jpeg">
+				</a>
+				<a href="images/t.jpg" data-lightbox="Foods">
+					<img src="images/t.jpg">
+				</a>
+				<a href="images/21.jpeg" data-lightbox="Foods">
+					<img src="images/21.jpeg">
+				</a>
+				<a href="images/13.jpeg" data-lightbox="Foods">
+					<img src="images/13.jpeg">
+				</a>
+				<a href="images/12.jpg" data-lightbox="Foods">
+					<img src="images/12.jpg">
+				</a>
+				<a href="images/pizza1.jpg" data-lightbox="Foods">
+					<img src="images/pizza1.jpg">
+				</a>
+				<a href="images/Spices.jpg" data-lightbox="Foods">
+					<img src="images/Spices.jpg">
+				</a>
+				<a href="images/9.jpg" data-lightbox="Foods">
+					<img src="images/9.jpg">
+				</a>
+				<a href="images/10.jpeg" data-lightbox="Foods">
+					<img src="images/10.jpeg">
+				</a>
+				
+				<a href="images/0.jpg" data-lightbox="Foods">
+					<img src="images/0.jpg" >
+				</a>
+				<a href="images/vegetable soup.jpeg" data-lightbox="Foods">
+					<img src="images/vegetable soup.jpeg" >
+				</a>
+				<a href="images/3.jpeg" data-lightbox="Foods">
+					<img src="images/3.jpeg" >
+				</a>
+				<a href="images/table.jpg" data-lightbox="Foods">
+					<img src="images/table.jpg" >
+				</a>
+				<a href="images/soup-1.jpg" data-lightbox="Foods">
+					<img src="images/soup-1.jpg">
+				</a>
+			</div>
+		</div>
+		<script src="lightbox-plus-jquery.js"></script>
+	<br><br><br><br><br>
+	<table width="90%">
+		<th>ADDRESS</th>
+		<th>RESERVATION</th>
+		<th>OPEN HOURS</th>
+		<tr>
+			<td style="font-size: 20px; text-align: center; font-family: times new roman;">
+				H&M Food Corner<br>No 29,Galle Road,Ambalangoda
+			</td>
+			<td style="font-size: 20px; text-align: center; font-family: times new roman;">
+				+94912233445 <br> h&mfoodcorner@gmail.com
+			</td>
+			<td style="font-size: 20px; text-align: center; font-family: times new roman;">
+				Monday - Friday: 10AM to 11PM <br> Saturday - Sunday: 9AM to 12PM
+			</td>
+		</tr>
+		
+	</table>
+	<br><br>
+
+</body>
+</html>
